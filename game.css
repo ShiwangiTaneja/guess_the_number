@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    min-width: 100%;
+    background: linear-gradient(to right top, #555ca8, #bc76df);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    padding: 4rem;
+    background-color: rgba(255, 255, 255, 0.779);
+    text-align: center;
+    border-radius: 1rem;
+}
+h1{
+    margin-bottom: 1.5rem;
+    font-size: 30px;
+    font-weight: 600;
+}
+input{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    width: 110px;
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: 5px solid #7483cc;
+    background-color: #4d5a9a8e;
+    color: black;
+    box-shadow: 6px 8px 25px #0b154366;
+}
+
+/* ===== TO REMOVE RANGE ARROWS FROM INPUT ==== */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+}
+button{
+    margin-bottom: 2rem;
+    padding: 0.75rem 1rem;
+    width: 160px;
+    border-radius: 0.5rem;
+    background: linear-gradient(to top right, #5f4b74, #94a3ee);
+    color: white;
+    border: none;
+    box-shadow: 12px 8px 25px #6e409cd7;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#play{
+    width: 170px;
+}
+
+#play_again{
+    display: none;
+    width: auto;
+}
+
+button:hover{
+    box-shadow: 12px 8px 25px #552f7bd7;
+}
+button:active{
+    box-shadow: 12px 8px 25px #552f7be8;
+}
+p{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 60px;
+}
+p#msg{
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(101, 165, 42);
+}

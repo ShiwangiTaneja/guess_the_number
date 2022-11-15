@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Me!!</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <h1>I am thinking of a number between 1-100.</h1>
+        <h1>Can you Guess it!!</h1>
+
+        <input type="number" value="0" onfocus="this.value=''" id="input_number"><br>
+        
+
+        <button type="submit" onclick="play()" id="play">GUESS</button>
+        <button type="submit" onclick="location.reload()" id="play_again">Play again!!</button>
++
+        <p id="msg">Start guessing...</p>
+        <p>No. of Attempts : <span id="no_of_guesses"> <b>0</b> </span></p>
+
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html> 
